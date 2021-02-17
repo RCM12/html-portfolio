@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+    <!-- NOTE: USING BOOTSTRAP 5.0 -->
+
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unity/C# Project</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Boostrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+
   </head>
   <body>
-    <ul>
-      <li><a href="../index.html">Go Back</a></li>
-    </ul>
-    <hr>
-    <h2>Paddle Ninja: A 2D Breakout-Style Game With Controller Support</h2>
+    <p class="go-back">
+      <a href="../index.html">Go Back</a></li>
     <p>
-      Paddle Ninja is a 2D Breakout-style game in which the player controls a paddle and attempts to break bricks with one or more
-      endlessly-moving steel balls. I created it using the Unity game engine and the C# programming language. I plan to add more features to the
-      game in the future.
-    </p>
-    <p>
-      In its current stage, the game consists of the following features:<br>
-      <ul>
-        <li>A variety of screens including a main menu, an options menu, and a progress menu</li>
-        <li>Eight different collectibles, which appear with a random chance upon breaking a brick and alter one of the following:</li>
-        <ul>
-          <li>The behavior of the ball(s) currently in play</li>
-          <li>The player-controlled paddle</li>
+    <section class="project-description">
+      <h2>Paddle Ninja: A 2D Breakout-Style Game With Controller Support</h2>
+      <p>
+        Paddle Ninja is a 2D Breakout-style game in which the player controls a paddle and attempts to break bricks with one or more
+        endlessly-moving steel balls. I created it using the Unity game engine and the C# programming language. I plan to add more features to the
+        game in the future.
+      </p>
+      <p>
+        In its current stage, the game consists of the following features:<br>
+        <ul class="game-features">
+          <li>A variety of screens including a main menu, an options menu, and a progress menu</li>
+          <li>Eight different collectibles, which appear with a random chance upon breaking a brick and alter one of the following:</li>
+          <ul>
+            <li>The behavior of the ball(s) currently in play</li>
+            <li>The player-controlled paddle</li>
+          </ul>
+          <li>Five different brick types, each with varying strength and difficulty to break, one of which is unbreakable and does not count towards
+            a level's brick count</li>
+          <li>A total of five heart containers per level, each representing one player life; the player starts with three at the beginning of each level
+            but can gain (or lose!) more by collecting life-related collectibles</li>
         </ul>
-        <li>Five different brick types, each with varying strength and difficulty to break, one of which is unbreakable and does not count towards
-          a level's brick count</li>
-        <li>A total of five heart containers per level, each representing one player life; the player starts with three at the beginning of each level
-          but can gain (or lose!) more by collecting life-related collectibles</li>
-      </ul>
-    </p>
-    <p>
-      I created original sprites for the ball, paddle, bricks, hearts (player lives), and collectibles. I enjoyed being able to mesh programming and pixel
-      art into an original game.
-    </p>
-    <p>
-      I've been passionate about game design for as long as I can remember. I felt that creating this game would help me gain a better understanding
-      of the game development process and object-oriented programming.
-    </p>
+      </p>
+      <p>
+        I created original sprites for the ball, paddle, bricks, hearts (player lives), and collectibles. I enjoyed being able to mesh programming and pixel
+        art into an original game.
+      </p>
+      <p>
+        I've been passionate about game design for as long as I can remember. I felt that creating this game would help me gain a better understanding
+        of the game development process and object-oriented programming.
+      </p>
+    </section>
   </body>
 </html>
