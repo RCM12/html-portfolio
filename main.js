@@ -76,7 +76,7 @@ function renderNavbar(page, items) {
   if (page === 'bsa-project' || page === 'unity-project') {
     return `
     <p class="go-back">
-      <a href="../index.html">Go Back</a>
+      <a href="index.html">Go Back</a>
     </p>
     `;
   } else {
