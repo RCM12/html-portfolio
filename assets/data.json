@@ -1,0 +1,34 @@
+{
+  "About": {
+    "title": "Undergraduate and CS Teaching Assistant at Boston College",
+    "photo": "profilepic.jpg"
+  },
+  "News": [
+    {
+      "title": "Started Second-Semester Teaching Assistant Role for CSCI1101",
+      "date": "January 28, 2021"
+    },
+    {
+      "title": "Started Teaching Assistant Role for CSCI1101",
+      "date": "August 31, 2020"
+    },
+    {
+      "title": "Began Undergraduate Career at Boston College",
+      "date": "August 27, 2018"
+    },
+    {
+      "title": "Earned the Rank of Eagle Scout",
+      "date": "September 22, 2017"
+    }
+  ],
+  "Projects": [
+    {
+      "id": "bsa-project",
+      "title": "Social/Informational Boy Scouts of America iOS App"
+    },
+    {
+      "id": "unity-project",
+      "title": "2D Breakout-Style Game Created Using Unity and C#"
+    }
+  ]
+}
