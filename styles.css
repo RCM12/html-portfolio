@@ -35,6 +35,10 @@ i:hover {
   color: #D9D7D6;
 }
 
+label {
+  padding: 0 10px;
+}
+
 .go-back {
   padding-top: 15px;
   padding-left: 20px;
@@ -55,6 +59,19 @@ i:hover {
 
 .container-fluid.about-container {
   padding: 3% 4%;
+}
+
+.search {
+  padding-bottom: 25px;
+}
+
+.search input {
+	width: 60%;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #eeeeee;
 }
 
 .profile-pic {

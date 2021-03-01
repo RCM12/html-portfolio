@@ -1,33 +1,29 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+import Navbar from './Navbar.js';
 
-    <!-- NOTE: USING BOOTSTRAP 5.0 -->
+export default function ProjectPage(project) {
+  document.querySelector('.overall-container').innerHTML = `
+    ${Navbar(project, null)}
+    ${SpecifiedProject(project)}
+  `;
+}
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unity/C# Project</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles.css">
-
-    <!-- Boostrap Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-
-    <!-- JS Scripts -->
-    <script src="..main.js" defer></script>
-
-  </head>
-  <body>
-    <p class="go-back">
-      <a href="../index.html">Go Back</a>
-    </p>
+function SpecifiedProject(project) {
+  if (project === 'bsa-project') {
+    return `
+    <section class="project-description">
+      <h2>Scout Symposium: A BSA-Centered Social and Informational App</h2>
+      <p>This project is still in development; the social features have not yet been implemented.</p>
+      <p>Scout Symposium is an iOS app that includes both a social and informational component.
+         The informational component focuses on the history of the BSA and as well as
+         information about merit badges, ranks, leadership positions, popular campgrounds,
+         and more. The social component, on the other hand, allows users to create their own accounts
+         and interact with others inside and outside of their troop. Users can indicate their troop's
+         location via Google Maps and contribute to their troop's Scout Symposium account.
+      </p>
+    </section>
+    `;
+  } else if (project === 'unity-project') {
+    return `
     <section class="project-description">
       <h2>Paddle Ninja: A 2D Breakout-Style Game With Controller Support</h2>
       <p>
@@ -59,5 +55,6 @@
         of the game development process and object-oriented programming.
       </p>
     </section>
-  </body>
-</html>
+    `;
+  }
+}
